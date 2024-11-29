@@ -1,0 +1,204 @@
+/* permite uma declaração global do valor da propriedade desejada; útil se você quiser alterar o valor em toda a página posteriormente.*/
+:root{
+    --cor-tiffany: #81D8D0;
+    --cor-mentaClaro: #EAF7F2;
+    --cor-neutra: #333;
+    --cor-branca: #fff;
+    --cor-preta: #000;
+    --cor-roxoEsc: #4A3A95;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+/*zera a margem e a borda do site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(/autoajuda-page-main/IMG/pexels-shvets-production-7176319.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);  /*blur do fundo*/
+
+    display: flex;  /* Enable flexbox layout */
+    flex-direction: column; /* Align items vertically */
+    min-height: 100vh;  /* Ensure full viewport height */ 
+}
+
+nav{
+    background-color: var(--cor-branca);
+    text-align: center;
+}
+
+nav ul h1{
+    display: inline-flex;
+    list-style: none;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+
+    
+}
+nav ul{
+    display:inline-flex;
+    list-style: none;
+}
+
+nav ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor-neutra);
+}
+
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: var(--cor-roxoEsc);
+    margin-top: 15px;
+    margin-left: -38px;
+}
+#missao-visao-valores{
+    background-color: var(--cor-mentaClaro);
+    text-align: center;
+    text-size-adjust: auto;
+    margin:5rem;
+}
+.principal{
+    background-color: var(--cor-branca);
+    color: var(--cor-neutra);
+}
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    font-weight: 70;
+    display: block;
+    unicode-bidi: isolate;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1; /* Allow container to grow and push footer down */
+}
+
+.section {
+    margin-bottom: 40px;
+    background-color: #333;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    color: #6C63FF; /* Roxo vibrante */
+    margin-bottom: auto;
+}
+
+p {
+    font-size: 18px;
+    color: #4A4A4A; /* Cinza médio */
+    line-height: 1.8;
+    
+}
+
+h1{
+    text-align: center;
+    background-color: white;
+    color: var(--cor-neutra);   
+}
+
+/*Formulário*/
+section{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*borda, texto, cores de borda e tamanho de fonte do formulario*/
+input, textarea, button{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 9px;
+    border: 1px solid #D0CDE1; /* Cinza suave */
+    margin-bottom: 20px;
+    background-color: #FFFFFF; /* Fundo branco */
+}
+/*Botão enviar do formulário*/
+button {
+    background-color: #6C63FF; /* Roxo vibrante */
+    color: #FFFFFF; /* Texto branco */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-roxoEsc); /* Roxo mais escuro */
+}
+
+header{
+    background-color: white;
+}
+
+footer{    
+
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem; /* Use rem for better scalability */
+    /* Add these styles to position footer at the bottom */
+    position: fixed; /* Or 'relative' if you want in the flow of the document  */
+    bottom: 0;
+    width: 100%; /* Ensure full width */
+}
+
+footer p {
+    color: var(--cor-preta);
+    text-decoration: none;
+    margin: 0; /* Remove default paragraph margin */ 
+}
+
+/* Media queries para responsividade de tela ( tamanho ) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,90 @@
+.main-logo{
+    background: #39588F;
+    color: white;
+    border-radius: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-primaria);
+    
+}
+
+.menu{
+    border-radius: 30%;
+}
+
+body{ 
+    background-color: #EAF7F2;;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    font-size: medium;
+}
+
+p{
+    text-align: justify;
+    background-color: #ffff;
+    align-content:baseline;
+    font-weight: bold;
+    font-size: medium;
+    font-style:normal;
+
+}
+
+.botao{
+    background-color:whitesmoke;
+    border-radius: 15px;
+    font-style:auto;
+    font-weight: bold;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+section{
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Cores sugeridas: */
+/* --primary: #3498db; */ /* Azul claro */
+/* --secondary: #e74c3c; */ /* Vermelho */
+/* --gray: #f2f2f2; */ /* Cinza claro */
+
+form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: var(--cor-primaria);
+    color: #8b0bf3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:(var(--cor-primaria), 10%);
+  }
